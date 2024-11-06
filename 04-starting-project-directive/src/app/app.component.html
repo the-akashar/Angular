@@ -1,0 +1,14 @@
+<main>
+  <app-learning-resources />
+
+  <hr />
+
+  <app-auth />
+  <!-- @if (isAdmin()) {
+    <p>Only Admin Can view.</p>
+  } -->
+    <!-- <p *ngIf="isAdmin()">Only Admin Can view</p> -->
+  <ng-template appAuth="admin">
+    <p >Only Admin CAn See</p>
+  </ng-template>
+</main>
